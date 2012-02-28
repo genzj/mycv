@@ -1,3 +1,6 @@
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
 <style type="text/css">
 div .pos_fixed
 {
@@ -13,7 +16,7 @@ hr
 
 <div>
 <blockquote>
-<h1> Jie ZHU </h1>
+<h1> Jason<br /> Jie ZHU </h1>
 <p class="pos_fixed">
 Room 1208, 1038 Hongqiao Rd,<br />
 Shanghai 200051,China<br />    
