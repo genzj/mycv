@@ -1,6 +1,11 @@
 <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
+<script type="text/javascript">
+//remove ad banners
+if (jQuery) jQuery(function($){
+$('center').each(function(idx,ele){if($('a img',ele).attr('src').indexOf('Banners')>-1)$(ele).remove();})
+});
+</script>
 <style type="text/css">
 div .pos_fixed
 {
