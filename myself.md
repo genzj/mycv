@@ -17,6 +17,14 @@ hr
 	opacity: 0.5;
 	margin-top: 20px;
 }
+li:hover 
+{
+background: rgba(209,230,240,0.7);
+-o-transition: background 0.3s linear;
+-webkit-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+transition: background 0.3s linear;
+}
 </style>
 
 <div>
