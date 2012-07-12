@@ -50,17 +50,17 @@ Bachelor of Engineering in Automation. Overall GPA 4.25/5.0.
 
 * *Jul 2010 -- Present, Embedded software engineer, Cisco Systems.*		
 	Hybrid fiber-coaxial(HFC) products including network management solutions. Contribute to development of DOCSIS network Cable Modem and related network management system.
-	Have designed and developed a dynamically data collection subsystem which queries core status of different network devices from their independent MCUs or with inner ADCs. Including an embedded, hardware independent C-like expression system aiming at data conversion. Also take part in automatic test station implementation.
+	Have designed and implemented a dynamically data collection subsystem which queries core status of different network devices from their independent MCUs or with inner ADCs. Including an embedded, hardware independent C-like expression system aiming at data conversion. Also take part in automatic test station implementation.
  
 ---
 **Specialties**
 
+* Extensive C/C++ programming experience in embedded system development including diagnostics on code and register level,
 * Networking principles, plus working knowledge of related disciplines, e.g. TCP/IP, HTTP, FTP, computer security, algorithms, database, and operating systems,
 * Background in network management concepts including SNMP, MIB design,
-* Extensive C/C++ programming experience in embedded system development including diagnostics on code and register level,
-* Familiar with Python, VBA, programming skills of Java, ARM/MIPS assembly language, and shell scripts(including Bash, zsh and GNU common tool, such as grep, sed and awk),
+* Practical skills at Javascript, mainly AJAX on embedded platform, including common libs such as jQuery, 
+* Familiar with Python, VBA and shell scripts(Bash, zsh and GNU common tool, such as grep, sed and awk),
 * Hands-on experiences in embedded interpreter implementation with Yacc & Lex (Bison & Flex), 
-* Practical skills at Javascript(including common libs such as jQuery and Prototype), and
 * Technical documentation written skill and automatic documentation preparation with LaTeX, Doxygen and Markdown.
 
 ---
@@ -73,5 +73,5 @@ Bachelor of Engineering in Automation. Overall GPA 4.25/5.0.
 <hr style="margin-top:2px;border:1px inset" />
 
 <div style="margin-top:100px;">
-<pre style="color:white;">updated:20:49 PM Monday, March 12, 2012</pre>
+<pre style="color:white;">updated:21:26 PM Monday, July 12, 2012</pre>
 </div>
