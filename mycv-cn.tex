@@ -1,0 +1,210 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,height=25cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{朱}{捷}
+\title{软件工程师}                           % optional, remove / comment the line if not wanted
+\address{上海}%{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~159~2143~9674}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\email{jason@zhujie.info}                          % optional, remove / comment the line if not wanted
+\email{zj0512@gmail.com}                            % optional, remove / comment the line if not wanted
+\homepage{www.github.com/genzj}                     % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\extrainfo{出生年月：1988年5月}                     % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{IMG_3151.JPG}                   % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{简介}
+\cvlistitem{从事基于OpenStack和KVM的网络功能虚拟化(NFV)开发工作。}
+\cvlistitem{具备电信级网络TCP/IPv4/IPv6协议栈和相关软件开发经验。}
+\cvlistitem{主要使用GNU C/C++和Python语言，兼职Python讲师。}
+\cvlistitem{有使用Javascript及其常见库如jQuery、AngularJS的项目经验。}
+\cvlistitem{乐于学习，愿意承担探索和研究新技术的工作。}
+
+\section{工作经验}
+\cventry{2014.7至今}{网络功能虚拟化及云平台高级软件开发工程师}{\newline{}%
+阿尔卡特朗讯上海贝尔}{上海}{}{%
+\begin{itemize}%
+    \item 负责基于KVM和OpenStack的虚拟机生命周期管理、网络虚拟化和镜像构建等工作的技术研发。
+    \item OpenStack平台二层网络及SRIOV故障排查。
+    \item 设计并实现跨不同语言（包括C/C++，bash，Python等）、多种平台/子系统间的接口。
+    \item 部门OpenStack基础设施维护组成员，为OpenStack日常维护工作编写自动化脚本。
+    \item 部门ClearCase/ClearQuest向Git迁移先行工作组的主要技术成员。
+    \item 评估项目涉及的免费或开源软件协议。
+    \item 跟踪及修正上游Linux内核及相关部件漏洞。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{2012.9--2014.6}{软件工程师}{\newline{}%
+阿尔卡特朗讯上海贝尔}{上海}{}{%
+\begin{itemize}%
+    \item 开发IPv4/IPv6相关功能，维护产品自有网络协议栈中ARP、路由、洪泛保护、IPSec/IKE、NDP、NUD等部件，以及操作系统基本功能维护。
+    \item 部门内最佳实践和创新项目的支持与管理。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{2010.7--2012.8}{软件工程师}{\newline{}%
+思科}{上海}{}{%
+\begin{itemize}%
+    \item 主要负责DOCSIS光纤同轴混合网产品的集成网络管理系统实现和维护。
+    \item 基于lex/yacc设计实现了网管系统内自建语言（DSL）数据转换表达式语法、编译器和解释器。
+    \item 在功耗敏感平台上实现了嵌入式HTTP服务器和基于AJAX的网管WEB UI框架。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\section{教育背景}
+\cventry{2006--2010}{大学本科}{\newline{}%
+同济大学}{上海}{}{%
+自动化，无线传感网络方向
+}  % arguments 3 to 6 can be left empty
+
+\section{开源项目}
+\cventry{2013.9至今}{PyBingWallpaper}{\newline{}%
+https://github.com/genzj/pybingwallpaper}{}{}{%
+利用Python实现的业余项目。抓取微软Bing搜索引擎每日背景并设置为系统桌面，支持Windows、Gnome2/3。设立此项目主要目的是实践Python的新功能、尝试抽象Python2与Python3的细节差异、实现Python源代码的插件（Plugins）管理。但在github开源后吸引了一些软件博客的注意，并在全球范围内积累了约1000名用户，因此一直维护至今。
+}  % arguments 3 to 6 can be left empty
+
+\cventry{2015.1}{Shadowsocks-go}{\newline{}%
+https://github.com/shadowsocks/shadowsocks-go}{}{}{%
+为shadowsocks-go（一个开源的SOCKS5代理软件）共享了salsa20加密算法支持。
+}  % arguments 3 to 6 can be left empty
+
+\section{公众演讲与培训}
+\cventry{}{上海贝尔大学兼职讲师}{}{}{}{%
+\begin{itemize}%
+    \item Python基础培训。
+    \item 跨部门Python项目咨询与支持。
+\end{itemize}
+}
+
+\cventry{}{阿尔卡特朗讯Toastmaster睿智演讲俱乐部}{前主席, ACB/ALB}{}{}{%
+\begin{itemize}%
+    \item 2014与2015年Toastmaster大区中文演讲比赛决赛选手。
+    \item 2014年Toastmaster大区即席演讲比赛半决赛选手。
+\end{itemize}
+}
+
+
+\section{语言}
+\cvlistitem{中文母语}
+\cvlistitem{英语流利}
+
+\section{专项技能}
+\begin{cvcolumns}
+    \cvcolumn{}{%
+        \begin{itemize}%
+            \item C/C++
+            \item 网络功能虚拟化
+            \item IP安全
+            \item 操作系统
+        \end{itemize}%
+    }
+    \cvcolumn{}{%
+        \begin{itemize}%
+            \item TCP/IP
+            \item Python
+            \item Javascript
+            \item 嵌入式软件开发
+        \end{itemize}%
+    }
+\end{cvcolumns}
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% not needed by now
+\iffalse
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+\fi
+
+\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
