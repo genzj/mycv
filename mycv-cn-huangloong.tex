@@ -1,0 +1,167 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75,height=25cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{朱}{捷}
+\title{研发经理}                           % optional, remove / comment the line if not wanted
+\address{上海}%{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+86~159~2143~9674}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\email{jason@zhujie.info}                          % optional, remove / comment the line if not wanted
+\email{jie.zhu@huangloong.com}                      % optional, remove / comment the line if not wanted
+\homepage{www.github.com/genzj}                     % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+\extrainfo{出生年月：1988年5月}                     % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{IMG_3151.JPG}                   % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{简介}
+\cvlistitem{从事基于OpenStack和KVM的网络功能虚拟化(NFV)开发工作。}
+\cvlistitem{有丰富的电信级高安全级别网络TCP/IPv4/IPv6协议栈和相关软件设计与开发经验。}
+\cvlistitem{熟悉云计算解决方案，具备网站全栈开发能力。}
+
+\section{工作经验}
+
+\cventry{2015至今}{软件研发经理}{\newline{}%
+黄龙物联网科技有限公司}{上海}{}{%
+\begin{itemize}%
+    \item 自有无线协议设计与实现。
+    \item 无线传感网络数据与云端对接解决方案设计与实现。
+    \item 软件研发团队建设与培养，软件研发流程制定。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{2016至今}{私有云及DevOps产品研发经理}{\newline{}%
+华云数据}{上海}{}{%
+\begin{itemize}%
+    \item 负责基于KVM和OpenStack的私有云管理平台整体架构设计、组件选型。
+    \item 负责DevOps流程、产品自动化部署流程等咨询、规划与实施，及其产品化设计。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{2012--2016}{网络功能虚拟化及云平台高级软件开发工程师}{\newline{}%
+阿尔卡特朗讯上海贝尔}{上海}{}{%
+\begin{itemize}%
+    \item 负责原有专用硬件产品向基于KVM和OpenStack的网络虚拟化软件产品迁移的技术预研和软件研发。
+    \item 客户现场OpenStack平台二层网络及SRIOV故障排查。
+    \item 开发IPv4/IPv6相关功能，维护产品自有网络协议栈中ARP、路由、洪泛保护、IPSec/IKE、NDP、NUD等部件，以及操作系统基本功能维护。
+    \item 产品最终被AT\&T、verizon等多家北美、欧洲运营商采购，为美、欧等地技术支持人员提供培训。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{2010--2012}{软件工程师}{\newline{}%
+思科}{上海}{}{%
+\begin{itemize}%
+    \item 主要负责DOCSIS光纤同轴混合网产品的集成网络管理系统实现和维护。
+    \item 设计实现了网管系统内自建语言（DSL）数据转换表达式语法、编译器和解释器。
+    \item 在嵌入式平台上实现了低功耗HTTP服务器和基于AJAX的网管WEB UI。
+    \item 产品主要供货上海OCN、美国Comcast等国内外多个有线电视网络运营商。
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\section{教育背景}
+\cventry{2006--2010}{大学本科}{\newline{}%
+同济大学}{上海}{}{%
+自动化，无线传感网络方向
+}  % arguments 3 to 6 can be left empty
+
+
+%\section{Interests}
+%\cvitem{hobby 1}{Description}
+%\cvitem{hobby 2}{Description}
+%\cvitem{hobby 3}{Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+%\section{References}
+%\begin{cvcolumns}
+%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+% not needed by now
+\iffalse
+% recipient data
+\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+\date{January 01, 1984}
+\opening{Dear Sir or Madam,}
+\closing{Yours faithfully,}
+\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+Albert Einstein discovered that $e=mc^2$ in 1905.
+
+\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+\makeletterclosing
+\fi
+
+\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
