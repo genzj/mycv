@@ -35,7 +35,7 @@
 \homepage{www.github.com/genzj}                     % optional, remove / comment the line if not wanted
 %\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
 \extrainfo{Date of birth: May 1988}                 % optional, remove / comment the line if not wanted
-\photo[64pt][0.4pt]{IMG_3151.JPG}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[64pt][0.4pt]{0.JPG}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -51,83 +51,98 @@
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
 \section{Summary}
-\cvlistitem{Openstack and KVM network function virtualization (NFV) developer.}
-\cvlistitem{Develop software especially TCP/IPv4/IPv6 stack of telecom network devices.}
-\cvlistitem{Mainly wield GNU C/C++ and Python, part-time Python lecturer.}
-\cvlistitem{Practical skills of Javascript and common libs such as jQuery and AngularJS.}
-\cvlistitem{A quick learner and diligent team player with enthusiasm for cutting-edge technologies.}
+\cvlistitem{Rich development experience in telecommunication industrial grade large scale system projects.}
+\cvlistitem{Solid foundation for TCP/IP stacks/applications designing or troubleshooting.}
+\cvlistitem{Wield Python, JS, C/C++ and Go with good code manners and practical solutions of their DevOps integration.}
+\cvlistitem{Part-time technical trainer, also a quick learner and diligent team player with enthusiasm for cutting-edge technologies.}
 
 \section{Experience}
-\cventry{2014.7--Present}{VNF/Cloud Senior Software Engineer}{\newline{}%
-Alcatel-Lucent Shanghai Bell}{Shanghai, China}{}{%
+\cventry{Jan, 2017 -- Present}{CTO, co-founder}{\newline{}%
+Huangloong IoT technology Inc.}{Shanghai, China}{}{%
 \begin{itemize}%
-    \item Working on KVM and OpenStack life-cycle management, network virtualization, security and image builder.
-    \item OpenStack platform troubleshooting incuding L2-network, SRIOV.
-    \item Design and implement interoperation interfaces and framework for subsystems implemented with varies of programming languages (C/C++, bash and Python).
-    \item Member of OpenStack infrastructure operational team. Composing auto scripts to reduce OpenStack maintenance work load.
-    \item Vanguard and technical leader of migration from ClearCase/ClearQuest to Git.
-    \item Responsible for FOSS (Free and OpenSource Software) license/risk evaluation
-    \item Linux upstream security flaws identification and patching.
+	\item Assess customers’ needs and design software architectures to meet requirements, then design software products or systems and propose practical development plan.
+	\item Select proper IoT protocols including NBIoT (Narrow Band Internet of Things) and LoRa (Long Range, a patented digital wireless data communication technology) for software solutions and make proof of concept for customer evaluation.
+	\item Design data storage models, high-availability implementation and scaling mechanism for large scale industrial IoT solutions.
+	\item Design IoT related application protocol, with appropriate retry, back off and/or acknowledge mechanisms to keep the software and entire system robust and efficient.
+	\item Add software interfaces to products or systems making them compatible with standard protocols including but not limited to MQTT (Message Queuing Telemetry Transport), WebSockets, CoAP (The Constrained Application Protocol) etc.
+	\item Implement product software application, including firmware working in embedded system and full stack software deployed on cloud.
 \end{itemize}}  % arguments 3 to 6 can be left empty
 
 \vspace{3pt}
 
-\cventry{2012.9--2014.6}{Software Engineer}{\newline{}%
-Alcatel-Lucent Shanghai Bell}{Shanghai, China}{}{%
+\cventry{Apr, 2016 -- Jan, 2017}{Develop Manager}{\newline{}%
+Chinac.com}{Shanghai, China}{}{%
 \begin{itemize}%
-    \item Develop features of IPv4/IPv6 related modules, including ARP, route, flooding proofing, IPSec, IKE, NDP, NUD, as well as generic OS features.
-    \item Support and manage innovation and best practices sharing in department.
+    \item Led developments of a private cloud management system based on OpenStack by deciding technical architecture, scheduling technical tasks and cooperating with product teams.
+    \item Responsible for fullstack tech research, design and implementation; designed a distributed framework which integrated Flask, Django and Go projects as API backend, as well as non-SQL database such as Elasticsearch and influxDB for audit log and systematic metrics storage.
+    \item Introduced React into company and led the migration of legacy angular-jQuery projects to React.
+    \item Propelled DevOps practices, implemented realted infrastructures and toolchains, and responsible for productization of them.
 \end{itemize}}  % arguments 3 to 6 can be left empty
 
 \vspace{3pt}
 
-\cventry{2010.7--2012.8}{Software Engineer}{\newline{}%
+\cventry{Sep, 2012 -- Apr, 2016}{Senior Software Engineer}{\newline{}%
+Alcatel-Lucent Shanghai Bell}{Shanghai, China}{}{%
+\begin{itemize}%
+    \item Worked for network functions virtualization and automatic OpenStack management systems.
+    \item Designed and implemented interoperation interfaces and frameworks for a distributed telecommunication media gateway product with varies of programming languages (C/C++, bash and Python), especially for service HA (high availability) switch-over, hot upgrading and dynamic scaling out or scaling in.
+    \item Developed OpenStack platform troubleshooting and self diagnosis tools aimed at L2-network and SRIOV.
+    \item Maintained TCP/IP related modules in legacy ASIC products, including ARP, route, flooding proofing, IPSec, IKE, NDP, as well as generic OS features such as file system.
+    \item Technical leader of the DevOps migration group.
+    \item Responsible for FOSS (Free and OpenSource Software) licenses/risks evaluation.
+    \item Supported and managed the innovative and best practices sharing in department.
+\end{itemize}}  % arguments 3 to 6 can be left empty
+
+\vspace{3pt}
+
+\cventry{Jul, 2010 -- Aug, 2012}{Software Engineer}{\newline{}%
 Cisco}{Shanghai, China}{}{%
 \begin{itemize}%
-    \item Hybrid fiber-coaxial(HFC) products including network management solutions. Contribute to development of DOCSIS network Cable Modem and related network management system.
-    \item Developed a flexible data converting subsystem with DSL (domain-specific language) expression lexicalizer/parser powered by lex/yacc.
-    \item Implemented an AJAX WEB UI framework with HTTP server on a low power consumption embedded platform.
+    \item Designed and developed a network device management platform for DOCSIS network Cable Modems and distributed Hybrid fiber-coaxial(HFC) devices.
+    \item Implemented a DSL (domain-specific language) expression lexicalizer and interpreter for extensible data conversion between various devices.
+    \item Implemented an AJAX WEB UI framework as well as an embedded HTTP server for low power consumption devices.
 \end{itemize}}  % arguments 3 to 6 can be left empty
 
 \section{Education}
-\cventry{2006--2010}{Bachelor}{\newline{}%
+\cventry{2006 -- 2010}{Bachelor}{\newline{}%
 Tongji University}{Shanghai, China}{}{%
 Major in: automation, wireless senor network
 }  % arguments 3 to 6 can be left empty
 
-\section{Projects}
-\cventry{2013.9--Present}{PyBingWallpaper}{\newline{}%
+\section{Open Source Projects}
+\cventry{2013.9 -- Present}{PyBingWallpaper}{\newline{}%
 https://github.com/genzj/pybingwallpaper}{}{}{%
 A part-time project by Python which fetches "today's background" from bing.com and set it as current wallpaper. Implements a framework decoupling downloading and wallpaper configuration of different systems. It supports Windows xp/7 and Linux with Gnome2/3. It owns about 1000 global users according to downloading statistics.
 }  % arguments 3 to 6 can be left empty
 
 \cventry{2015.1}{Shadowsocks-go}{\newline{}%
 https://github.com/shadowsocks/shadowsocks-go}{}{}{%
-Contribute salsa20 (an encryption algorithm) implementation to shadowsocks-go(a opensource socks5 proxy) variant.
+Contribute the salsa20 cipher to shadowsocks-go (a opensource socks5 proxy) variant.
 }  % arguments 3 to 6 can be left empty
 
 \section{Public Speaking and Presentation}
-\cventry{}{Alcatel-Lucent Shanghai Bell Part-time Lecturer}{}{}{}{%
+\cventry{}{Part-time Technical Trainer}{}{}{}{%
 \begin{itemize}%
-    \item for basic Python introduction courses, also offering Python projects bootstrap consultant.
+    \item Train engineers at different levels from Cisco, Siemens and other companies. 
+    \item Completed serial courses for Python data analysis, full-stack programming, IoT network design and generic programming skills.
 \end{itemize}
 }
 
-\cventry{}{Alcatel-Lucent Shanghai Bell Smart Speakers Toastmaster Club}{Past President, ACB/ALB}{}{}{%
+\cventry{}{Toastmaster Club}{ACB/ALB}{}{}{%
 \begin{itemize}%
     \item Finalist of 2014 and 2015 Toastmaster District 85 (Eastern China) Mandarin Speech Contests
     \item Semi-finalist of 2014 Toastmaster District 85 (Eastern China) English Table-topic Contest
+    \item Past president of Alcatel-Lucent Shanghai Bell Smart Speakers.
 \end{itemize}
 }
 
 
 \section{Languages}
-\cvlistitem{Native Chinese/Mandarin Speaker}
+\cvlistitem{Native Chinese Mandarin Speaker}
 \cvlistitem{Competent Literal and Oral English Skills}
 
 \section{Specialties}
@@ -135,16 +150,16 @@ Contribute salsa20 (an encryption algorithm) implementation to shadowsocks-go(a 
     \cvcolumn{}{%
         \begin{itemize}%
             \item C/C++
-            \item Network Function Virtualization
-            \item IP Security
-            \item OS
+            \item Go (Golang)
+            \item DevOps
+            \item React
         \end{itemize}%
     }
     \cvcolumn{}{%
         \begin{itemize}%
-            \item TCP/IP
+            \item TCP/IP, IP security
             \item Python
-            \item Javascript
+            \item Javascript, ECMAScript
             \item Embedded Software Development
         \end{itemize}%
     }
